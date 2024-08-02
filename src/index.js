@@ -1,6 +1,6 @@
 module.exports = function reverse(n) {
-    let str = n.toString();
-    let reversedStr = str.split("").reverse().join("");
-    let reversedNum = parseInt(reversedStr, 10);
-    return reversedNum;
+    let numAbsolute = Math.abs(n);
+    let numToStr = [numAbsolute].toString();
+    let result = numToStr.split("").reverse().join("");
+    return result;
 };
